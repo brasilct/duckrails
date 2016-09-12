@@ -7,11 +7,12 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'foundation-rails'
 gem 'simple_form'
-gem 'mysql2'
+gem 'pg'
 gem 'cocoon'
 gem 'kaminari'
 gem 'rest-client'
 gem 'libxml-ruby'
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'
@@ -35,4 +36,8 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'selenium-webdriver', '2.53.0'
   gem 'table_flipper'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
